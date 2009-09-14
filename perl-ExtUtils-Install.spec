@@ -8,13 +8,13 @@
 Summary:	ExtUtils::AutoInstall - automatic install of dependencies via CPAN
 Summary(pl.UTF-8):	ExtUtils::AutoInstall - automatyczna instalacja zależności z CPAN
 Name:		perl-ExtUtils-Install
-Version:	1.52
+Version:	1.54
 Release:	1
 # same as perl
 License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
-# Source0-md5:	dae7528d24d2aa14204df3a873b77e5a
+# Source0-md5:	28d2ab1f23b26f90772d953387f32fe3
 Url:		http://search.cpan.org/dist/ExtUtils-Install/
 BuildRequires:	perl-devel >= 1:5.8.0
 BuildRequires:	rpm-perlprov >= 4.1-13
