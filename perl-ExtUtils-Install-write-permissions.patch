@@ -1,0 +1,20 @@
+--- ExtUtils-Install-1.54/lib/ExtUtils/Install.pm.orig	2009-07-27 23:40:12.000000000 +0200
++++ ExtUtils-Install-1.54/lib/ExtUtils/Install.pm	2012-05-26 07:22:29.057483086 +0200
+@@ -813,7 +813,7 @@
+                 utime($atime,$mtime + $Is_VMS,$targetfile) unless $dry_run>1;
+ 
+ 
+-                $mode = 0444 | ( $mode & 0111 ? 0111 : 0 );
++                $mode = 0644 | ( $mode & 0111 ? 0111 : 0 );
+                 $mode = $mode | 0222
+                     if $realtarget ne $targetfile;
+                 _chmod( $mode, $targetfile, $verbose );
+@@ -1215,7 +1215,7 @@
+         }
+         my($mode,$atime,$mtime) = (stat $from)[2,8,9];
+         utime($atime,$mtime+$Is_VMS,$to);
+-        _chmod(0444 | ( $mode & 0111 ? 0111 : 0 ),$to);
++        _chmod(0644 | ( $mode & 0111 ? 0111 : 0 ),$to);
+         next unless $from =~ /\.pm$/;
+         _autosplit($to,$autodir);
+     }
