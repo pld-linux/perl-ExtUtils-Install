@@ -2,7 +2,6 @@
 # Conditional build:
 %bcond_with	tests	# perform "make test"
 #
-%include	/usr/lib/rpm/macros.perl
 %define		pdir	ExtUtils
 %define		pnam	Install
 Summary:	ExtUtils::AutoInstall - automatic install of dependencies via CPAN
